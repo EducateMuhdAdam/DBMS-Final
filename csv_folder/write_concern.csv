@@ -1,0 +1,4 @@
+write_concern,scale,reps,mean_docs_per_sec,stddev_docs_per_sec,relative_to_w0_percent,replica_set
+w=0 (unacknowledged),100000,3,155151.94,20581.63,100.0,False
+w=1 (acknowledged),100000,3,160515.86,10449.56,103.5,False
+"w=1, j=True (journaled)",100000,3,137330.99,12987.05,88.5,False

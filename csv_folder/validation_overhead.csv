@@ -1,0 +1,4 @@
+scale,reps,no_validator_mean,no_validator_sd,jsonschema_validator_mean,jsonschema_validator_sd,overhead_percent,invalid_document_rejected
+100000,3,153043.81,15015.05,104174.75,7090.71,31.93,True
+250000,3,165883.43,4979.55,105660.91,6268.24,36.3,True
+500000,3,156699.93,8388.67,104996.06,3246.07,33.0,True

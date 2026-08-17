@@ -1,0 +1,37 @@
+user,role,operation,result,error_code,error_message
+bench_reader,read (built-in),read posts,ALLOWED,,
+bench_reader,read (built-in),count posts,ALLOWED,,
+bench_reader,read (built-in),read other collection,ALLOWED,,
+bench_reader,read (built-in),insert into posts,DENIED,13,"not authorized on myDatabase to execute command { insert: ""posts"""
+bench_reader,read (built-in),update posts,DENIED,13,"not authorized on myDatabase to execute command { update: ""posts"""
+bench_reader,read (built-in),delete from posts,DENIED,13,"not authorized on myDatabase to execute command { delete: ""posts"""
+bench_reader,read (built-in),create index,DENIED,13,"not authorized on myDatabase to execute command { createIndexes: ""posts"""
+bench_reader,read (built-in),list collections,ALLOWED,,
+bench_reader,read (built-in),create user (escalation),DENIED,13,"not authorized on myDatabase to execute command { createUser: ""escalated"""
+bench_writer,readWrite (built-in),read posts,ALLOWED,,
+bench_writer,readWrite (built-in),count posts,ALLOWED,,
+bench_writer,readWrite (built-in),read other collection,ALLOWED,,
+bench_writer,readWrite (built-in),insert into posts,ALLOWED,,
+bench_writer,readWrite (built-in),update posts,ALLOWED,,
+bench_writer,readWrite (built-in),delete from posts,ALLOWED,,
+bench_writer,readWrite (built-in),create index,ALLOWED,,
+bench_writer,readWrite (built-in),list collections,ALLOWED,,
+bench_writer,readWrite (built-in),create user (escalation),DENIED,13,"not authorized on myDatabase to execute command { createUser: ""escalated"""
+bench_analyst,postsReadOnly (custom),read posts,ALLOWED,,
+bench_analyst,postsReadOnly (custom),count posts,ALLOWED,,
+bench_analyst,postsReadOnly (custom),read other collection,DENIED,13,"not authorized on myDatabase to execute command { find: ""private_notes"""
+bench_analyst,postsReadOnly (custom),insert into posts,DENIED,13,"not authorized on myDatabase to execute command { insert: ""posts"""
+bench_analyst,postsReadOnly (custom),update posts,DENIED,13,"not authorized on myDatabase to execute command { update: ""posts"""
+bench_analyst,postsReadOnly (custom),delete from posts,DENIED,13,"not authorized on myDatabase to execute command { delete: ""posts"""
+bench_analyst,postsReadOnly (custom),create index,DENIED,13,"not authorized on myDatabase to execute command { createIndexes: ""posts"""
+bench_analyst,postsReadOnly (custom),list collections,DENIED,13,not authorized on myDatabase to execute command { listCollections: 1
+bench_analyst,postsReadOnly (custom),create user (escalation),DENIED,13,"not authorized on myDatabase to execute command { createUser: ""escalated"""
+bench_dbadmin,dbAdmin (built-in),read posts,DENIED,13,"not authorized on myDatabase to execute command { find: ""posts"""
+bench_dbadmin,dbAdmin (built-in),count posts,DENIED,13,"not authorized on myDatabase to execute command { aggregate: ""posts"""
+bench_dbadmin,dbAdmin (built-in),read other collection,DENIED,13,"not authorized on myDatabase to execute command { find: ""private_notes"""
+bench_dbadmin,dbAdmin (built-in),insert into posts,DENIED,13,"not authorized on myDatabase to execute command { insert: ""posts"""
+bench_dbadmin,dbAdmin (built-in),update posts,DENIED,13,"not authorized on myDatabase to execute command { update: ""posts"""
+bench_dbadmin,dbAdmin (built-in),delete from posts,DENIED,13,"not authorized on myDatabase to execute command { delete: ""posts"""
+bench_dbadmin,dbAdmin (built-in),create index,ALLOWED,,
+bench_dbadmin,dbAdmin (built-in),list collections,ALLOWED,,
+bench_dbadmin,dbAdmin (built-in),create user (escalation),DENIED,13,"not authorized on myDatabase to execute command { createUser: ""escalated"""

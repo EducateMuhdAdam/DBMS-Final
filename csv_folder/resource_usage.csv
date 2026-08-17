@@ -1,0 +1,25 @@
+elapsed_s,cpu_cores_available,client_cpu_percent,server_cpu_percent,server_cpu_normalised,server_rss_mb,server_reported_resident_mb,server_reported_virtual_mb,scale,indexed,query
+1.576,16,0.0,100.3,6.27,319.01,319,5363,100000,False,Q1 point lookup by postID
+1.759,16,0.0,95.3,5.96,319.03,319,5363,100000,False,"Q2 recent posts, sorted, limit 20"
+0.02,16,153.7,0.0,0.0,319.03,319,5363,100000,False,"Q3 posts by tag, limit 100"
+1.41,16,2.2,97.7,6.11,319.22,319,5363,100000,False,Q4 aggregation: top authors by likes
+0.027,16,0.0,39.2,2.45,321.19,321,5364,100000,True,Q1 point lookup by postID
+0.025,16,0.0,41.8,2.61,321.21,321,5364,100000,True,"Q2 recent posts, sorted, limit 20"
+0.028,16,56.1,78.3,4.89,321.24,321,5364,100000,True,"Q3 posts by tag, limit 100"
+1.47,16,2.1,101.2,6.33,321.27,321,5364,100000,True,Q4 aggregation: top authors by likes
+3.032,16,0.0,107.8,6.74,409.83,409,5364,250000,False,Q1 point lookup by postID
+4.094,16,0.0,100.1,6.26,409.93,409,5364,250000,False,"Q2 recent posts, sorted, limit 20"
+0.022,16,69.8,44.8,2.8,409.93,409,5364,250000,False,"Q3 posts by tag, limit 100"
+3.366,16,0.5,99.9,6.24,409.99,409,5364,250000,False,Q4 aggregation: top authors by likes
+0.021,16,0.0,0.0,0.0,410.72,410,5364,250000,True,Q1 point lookup by postID
+0.023,16,0.0,44.1,2.76,410.73,410,5364,250000,True,"Q2 recent posts, sorted, limit 20"
+0.035,16,44.5,0.0,0.0,410.73,410,5364,250000,True,"Q3 posts by tag, limit 100"
+3.24,16,0.0,99.0,6.19,410.79,410,5364,250000,True,Q4 aggregation: top authors by likes
+6.657,16,0.0,101.0,6.31,531.18,531,5364,500000,False,Q1 point lookup by postID
+7.929,16,0.2,99.2,6.2,531.25,531,5364,500000,False,"Q2 recent posts, sorted, limit 20"
+0.021,16,74.8,0.0,0.0,531.25,531,5364,500000,False,"Q3 posts by tag, limit 100"
+6.211,16,0.0,99.9,6.24,531.26,531,5363,500000,False,Q4 aggregation: top authors by likes
+0.025,16,61.5,41.7,2.61,532.88,533,5364,500000,True,Q1 point lookup by postID
+0.025,16,0.0,42.4,2.65,533.13,533,5364,500000,True,"Q2 recent posts, sorted, limit 20"
+0.033,16,0.0,69.9,4.37,533.18,533,5364,500000,True,"Q3 posts by tag, limit 100"
+6.593,16,0.2,99.3,6.21,533.34,533,5364,500000,True,Q4 aggregation: top authors by likes

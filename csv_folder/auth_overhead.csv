@@ -1,0 +1,5 @@
+user,role,reps,mean_handshake_ms,min_handshake_ms,max_handshake_ms
+bench_reader,read (built-in),10,11.36,9.353,23.168
+bench_writer,readWrite (built-in),10,13.66,9.203,29.451
+bench_analyst,postsReadOnly (custom),10,18.566,9.304,32.175
+bench_dbadmin,dbAdmin (built-in),10,20.222,9.695,35.307
